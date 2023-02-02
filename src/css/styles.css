@@ -18,3 +18,8 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.counry-title {
+  font-size: 28px;
+  font-weight:900;
+}
