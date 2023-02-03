@@ -14,7 +14,7 @@ input.addEventListener('input', debounce(onInputChange, DEBOUNCE_DELAY));
 function onInputChange(evt) {
   const country = evt.target.value.trim();
   if (!country.length) {
-    // console.log('Это пустой импут запрос не делаю');
+    console.log('Это пустой импут запрос не делаю');
     toClearPage();
     return;
   }
