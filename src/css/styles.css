@@ -19,6 +19,10 @@ body {
   margin-bottom: 16px;
 }
 
+.country-list {
+  list-style: none;
+}
+
 .counry-title {
   font-size: 30px;
   font-weight:800;
