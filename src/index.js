@@ -14,7 +14,7 @@ input.addEventListener('input', debounce(onInputChange, DEBOUNCE_DELAY));
 function onInputChange(evt) {
   const country = evt.target.value.trim();
   if (!country.length) {
-    console.log('Это пустой импут запрос не делаю');
+    // console.log('Это пустой импут запрос не делаю');
     toClearPage();
     return;
   }
@@ -22,7 +22,6 @@ function onInputChange(evt) {
   fetchCountries(country)
     .then(response => {
       if (!response.ok) {
-        console.log(response.ok)
         throw new Error(response.status);
       }
       return response.json();
@@ -32,7 +31,7 @@ function onInputChange(evt) {
 }
 
 function renderListMarkup(countries) {
-  console.log('🚀 ~ countries', countries);
+  // console.log('🚀 ~ countries', countries);
   let markup = '';
   if (countries.length >= 10) {
     toClearPage();
