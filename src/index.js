@@ -11,7 +11,7 @@ const card = document.querySelector('.country-info');
 
 input.addEventListener('input', debounce(onInputChange, DEBOUNCE_DELAY));
 
-console.log('Это самое начало проверка!!!');
+// console.log('Это самое начало проверка!!!');
 
 function onInputChange(evt) {
   const country = evt.target.value.trim();
