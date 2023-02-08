@@ -7,6 +7,7 @@ function fetchCountries(name) {
     if (!response.ok) {
       throw new Error(response.status);
     }
+    console.log(response.json());
     return response.json();
   });
 }
